@@ -1,0 +1,25 @@
+---
+import PageLayout from "../layouts/pageLayout.astro";
+import ModeToggle from "../components/ModeToggle.astro";
+import FoodBrandInfo from "../components/BrandInfo.astro";
+import BrandsAndChefs from "../components/BrandsAndChefs.astro";
+import Testimonials from "../components/Testimonials.astro";
+import Cost from "../components/Cost.astro";
+import OrderNow from "../components/OrderNow.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<PageLayout>
+    <div class="flex flex-col">
+        <ModeToggle selected="platform" />
+        <span class="mt-12"></span>
+        <FoodBrandInfo />
+        <span class="mt-12 md:mt-24"></span>
+        <BrandsAndChefs />
+        <span class="mt-8 md:mt-10"></span>
+        <Testimonials />
+        <Cost />
+        <OrderNow />
+        <Footer />
+    </div>
+</PageLayout>

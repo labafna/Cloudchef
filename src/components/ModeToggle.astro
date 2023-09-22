@@ -1,6 +1,16 @@
+---
+const { selected } = Astro.props;
+---
+
 <div class="p-1 mx-auto rounded-3xl flex w-fit" style="background: #C8C2BE;">
-    <button style="background-color: #E6EAE3" class="rounded-2xl py-1 px-2">
-        For Food Brands
+    <button
+        style={selected === "brand" ? "background-color: #E6EAE3" : ""}
+        class="rounded-2xl py-1 px-2"
+        ><a href="brand"> For Food Brands</a>
     </button>
-    <button class="rounded-2xl py-1 px-2">For Food Platforms</button>
+    <button
+        style={selected === "platform" ? "background-color: #E6EAE3" : ""}
+        class="rounded-2xl py-1 px-2"
+        ><a href="platform">For Food Platforms</a></button
+    >
 </div>
