@@ -1,57 +1,46 @@
+---
+const { preFace, title, description, benefits, mobileBenefits, buttonCTA } =
+  Astro.props;
+---
+
 <div class="flex-col md:flex-row flex mx-5 md:mx-16 items-center">
   <div class="flex-col flex-1">
     <span
       class="hidden md:block text-p1-d font-semibold not-italic text-sageGreen"
-      >FOR FOOD BRANDS</span
+      >{preFace}</span
     >
     <h1 class="text-h1-m md:text-h1-d font-grotesk text-deepBlack font-medium">
-      Scale to 100s of outlets, with perfect consistency
+      {title}
     </h1>
     <p
       class="mt-2 md:mt-4 font-normal text-p1-m md:text-p1-d font-inter text-deepBlack not-italic"
     >
-      Easy to integrate automation suite for your kitchen fleet to perfectly
-      execute your menu, with untrained staff, anywhere in the world.
+      {description}
     </p>
 
     <!-- Only for Desktop -->
     <ul class="hidden md:flex mt-4 flex-col text-deepBlack">
-      <li class="flex">
-        <span
-          class="text-center text-h3-d mr-2 font-normal not-italic text-sageGreen"
-        >
-          *
-        </span>
-        <span class="text-p1-d font-inter font-normal non-italic"
-          >Tap into unrealized revenue</span
-        >
-      </li>
-      <li class="flex">
-        <span
-          class="text-center text-h3-d mr-2 font-normal not-italic text-sageGreen"
-        >
-          *
-        </span><span class="text-p1-d font-inter font-normal non-italic"
-          >Build a global brand
-        </span>
-      </li>
-      <li class="flex">
-        <span
-          class="text-center text-h3-d mr-2 font-normal not-italic text-sageGreen"
-        >
-          *
-        </span>
-        <span class="text-p1-d font-inter font-normal non-italic"
-          >Retain more customers
-        </span>
-      </li>
+      {
+        benefits.map((benefit: string) => (
+          <li class="flex">
+            <>
+              <span class="text-center text-h3-d mr-2 font-normal not-italic text-sageGreen">
+                *
+              </span>
+              <span class="text-p1-d font-inter font-normal non-italic">
+                {benefit}
+              </span>
+            </>
+          </li>
+        ))
+      }
     </ul>
 
     <button
       class="hidden md:block bg-deepBlack rounded-xl mt-14 px-6 py-3 text-p2-d font-inter font-semibold text-deepWhite"
     >
       <a class="w-full" href="https://cloudchef.co" target="_blank">
-        Get a Demo Now
+        {buttonCTA}
       </a>
     </button>
   </div>
@@ -61,12 +50,12 @@
     class="flex flex-col md:hidden bg-greyYellowGreen rounded-lg px-3 py-4 mt-6 mb-8"
   >
     <h3 class="text-h3-m font-grotesk font-medium text-deepBlack">
-      Tap into unrealized revenue, build a global brand & retain more customers.
+      {mobileBenefits}
     </h3>
     <button
       class="mt-2 px-6 py-3 bg-deepBlack rounded-xl text-deepWhite text-p2-m font-semibold font-inter"
     >
-      Get a Demo Now
+      {buttonCTA}
     </button>
   </div>
 
