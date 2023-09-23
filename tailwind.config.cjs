@@ -7,58 +7,58 @@ module.exports = {
 		fontSize: {
 			...defaultTheme.fontSize,
 			'h1-d': [
-				'3.5rem',
-        {
-          lineHeight: '4rem',
-					
-        },
+				'56px',
+				{
+					lineHeight: '64px',
+
+				},
 			],
 			'h2-d': [
-				'3rem',
+				'48px',
 				{
-					lineHeight: '4rem',
-					
+					lineHeight: '64px',
+
 				},
 			],
 			'h3-d': [
-				'1.5rem',
+				'24px',
 				{
-					lineHeight: '1.75rem',
-					
+					lineHeight: '28px',
+
 				}
 			],
 			'h1-m': [
-				"2rem",
-        {
-          lineHeight: "2.25rem",
-					
-        },
+				"32px",
+				{
+					lineHeight: "36px",
+
+				},
 			],
 			'h2-m': [
-				'1.25rem',
+				'20px',
 				{
-					lineHeight: '1.5rem',
-					
+					lineHeight: '24px',
+
 				},
 			],
 			'h3-m': [
-				'1rem',
+				'16px',
 				{
-					lineHeight: '1.125rem',
-					
+					lineHeight: '18px',
+
 				}
 			],
 			'p1-d': [
-				'1.25rem',
+				'20px',
 				{
-					lineHeight: '1.625rem',
-					
+					lineHeight: '26px',
+
 				},
 			],
-			'p0-m': ['0.75rem', { lineHeight: '1.125rem', }],
-			'p2-d': ['1rem', { lineHeight: '1.25rem', }],
-			'p1-m': ['1rem', { lineHeight: '1.25rem', }],
-			'p2-m': ['0.875rem', { lineHeight: '1.25rem', }],
+			'p0-m': ['12px', { lineHeight: '18px', }],
+			'p2-d': ['16px', { lineHeight: '20px', }],
+			'p1-m': ['16px', { lineHeight: '20px', }],
+			'p2-m': ['14px', { lineHeight: '20px', }],
 		},
 		colors: {
 			...defaultTheme.colors,
