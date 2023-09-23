@@ -7,16 +7,52 @@ import Testimonials from "../components/Testimonials.astro";
 import Cost from "../components/Cost.astro";
 import OrderNow from "../components/OrderNow.astro";
 import Footer from "../components/Footer.astro";
+import Features from "../components/Features.astro";
 ---
 
 <PageLayout>
     <div class="flex flex-col">
         <ModeToggle selected="platform" />
         <span class="mt-12"></span>
-        <FoodBrandInfo />
+        <FoodBrandInfo
+            title="Serve Michelin-like dishes, with untrained staff"
+            description="End-to-end low cost automation suite to license and cook recipes from top food brands with super-human accuracy in your kitchens."
+            mobileBenefits="Increase demand, customer retention, and profitability with simpler operations"
+            preFace="FOR FOOD PLATFORMS"
+            benefits={[
+                "Increase demand",
+                "Customer retention",
+                "Profitability with simpler operations",
+            ]}
+            buttonCTA="Start Licensing"
+        />
         <span class="mt-12 md:mt-24"></span>
         <BrandsAndChefs />
-        <Testimonials />
+        <Features
+            sectionTitle="Superior to traditional kitchens in every way"
+            properties={[
+                {
+                    title: "Product Capability",
+                    imageUrl: "/images/featureImages/consistency.png",
+                    description:
+                        "Supercharge your kitchen to cook any dish from any chef in the world. Not limited by local availability of chefs and not dependant on training.",
+                },
+                {
+                    title: "Product Consistency",
+                    imageUrl: "/images/featureImages/consistency.png",
+                    description:
+                        "Super human accuracy, underwritten by software automation, no more training and no more human errors",
+                },
+                {
+                    title: "No Training",
+                    imageUrl: "/images/featureImages/consistency.png",
+                    description:
+                        "Zero training required for new recipes from anywhere in the world",
+                },
+            ]}
+            "
+            <Testimonials
+        />
         <Cost />
         <OrderNow />
         <Footer />
