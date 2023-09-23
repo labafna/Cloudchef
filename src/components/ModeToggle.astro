@@ -4,11 +4,11 @@ const { selected } = Astro.props;
 
 <div class="p-1 mx-auto rounded-3xl flex w-fit bg-moisture">
     <button
-        class={`text-deepBlack text-p0-m md:text-p1-d font-inter rounded-2xl py-1 px-2 ${selected === 'brand' ? 'font-bold italic bg-greyYellowGreen ' : ''}`}
-        ><a href="brand">For Food Brands</a>
+        class={`text-deepBlack text-p0-m md:text-p1-d font-inter py-2 px-4 rounded-20 ${selected === 'brand' ? 'font-semibold bg-greyYellowGreen ' : ''}`}
+        ><a href="brand">For <span class={selected === 'brand' ? 'italic' : ''}>Food Brands</span></a>
     </button>
     <button
-        class={`text-deepBlack text-p0-m md:text-p1-d font-inter rounded-2xl py-1 px-2 ${selected === 'platform' ? 'font-bold italic bg-greyYellowGreen' : ''}`}
-        ><a href="platform">For Food Platforms</a></button
-    >
+        class={`text-deepBlack text-p0-m md:text-p1-d font-inter py-2 px-4 rounded-20 ${selected === 'platform' ? 'font-semibold bg-greyYellowGreen' : ''}`}
+        ><a href="platform">For <span class={selected === 'platform' ? 'italic' : ''}>Food Platforms</span></a></button
+    > 
 </div>
