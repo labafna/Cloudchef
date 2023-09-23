@@ -70,15 +70,21 @@
     </button>
   </div>
 
-  <div class="mt-11 md:mt-0 ml-0 md:ml-14 w-full md:w-96 h-52 md:h-96">
-    <video class="hidden md:block h-full w-full rounded-xl" controls>
-      <source
-        src="https://www.youtube.com/watch?v=DsTApkSxssw"
-        type="video/mp4"
-      /></video
-    >
+  <div class="mt-11 md:mt-0 ml-0 md:ml-14 relative">
+    <div class="relative group cursor-pointer">
+      <img
+        src="/images/video_thumbnail.png"
+        class="hidden md:block rounded-xl"
+        style="height: 512px; width: 368px"
+      />
+      <div
+        class="hidden group-hover:flex absolute inset-0 items-center justify-center"
+      >
+        <img src="/images/play.png" />
+      </div>
+    </div>
     <iframe
-      class="md:hidden h-full w-full rounded-lg"
+      class="md:hidden h-52 w-full rounded-lg"
       src="https://www.youtube.com/embed/INDhZ7LwSeo?si=aOSeIEgeMmn3cQmo"
       title="YouTube video player"
       frameborder="0"
