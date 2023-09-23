@@ -2,15 +2,13 @@
 const { selected } = Astro.props;
 ---
 
-<div class="p-1 mx-auto rounded-3xl flex w-fit" style="background: #C8C2BE;">
+<div class="p-1 mx-auto rounded-3xl flex w-fit bg-moisture">
     <button
-        style={selected === "brand" ? "background-color: #E6EAE3" : ""}
-        class="rounded-2xl py-1 px-2"
-        ><a href="brand"> For Food Brands</a>
+        class={`text-deepBlack text-p0-m md:text-p1-d font-inter rounded-2xl py-1 px-2 ${selected === 'brand' ? 'font-bold italic bg-greyYellowGreen ' : ''}`}
+        ><a href="brand">For Food Brands</a>
     </button>
     <button
-        style={selected === "platform" ? "background-color: #E6EAE3" : ""}
-        class="rounded-2xl py-1 px-2"
+        class={`text-deepBlack text-p0-m md:text-p1-d font-inter rounded-2xl py-1 px-2 ${selected === 'platform' ? 'font-bold italic bg-greyYellowGreen' : ''}`}
         ><a href="platform">For Food Platforms</a></button
     >
 </div>
