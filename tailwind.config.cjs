@@ -78,7 +78,11 @@ module.exports = {
 			grotesk: ['Space Grotesk', 'sans-serif'],
 			inter: ['Inter', 'sans-serif']
 		},
-		extend: {},
+		extend: {
+			padding: {
+				18: '4.5rem'
+			}
+		},
 	},
 	plugins: [],
 }
