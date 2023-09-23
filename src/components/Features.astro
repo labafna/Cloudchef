@@ -2,11 +2,11 @@
 const { sectionTitle, properties } = Astro.props;
 ---
 
-<section class="flex flex-col py-4 px-20 md:py-18 md:px-18">
+<section class="flex flex-col py-4 px-20 md:py-18 md:px-18 w-full">
     <h2 class="md:text-center text-h2-m md:text-h2-d font-grotesk font-medium">
         {sectionTitle}
     </h2>
-    <div class="flex flex-col md:flex-row w-full gap-4 mt-4 md:mt-6">
+    <div class="flex flex-col md:flex-row w-full gap-4 mt-4 md:mt-6 flex-wrap">
         {
             properties.map(
                 (property: {
@@ -14,7 +14,10 @@ const { sectionTitle, properties } = Astro.props;
                     title: string;
                     description: string;
                 }) => (
-                    <div class="flex flex-col py-8 px-5 rounded-lg bg-dough text-deepBlack flex-1">
+                    <div
+                        class="flex flex-col py-8 px-5 rounded-lg bg-dough text-deepBlack "
+                        style="flex: 1 0 30%"
+                    >
                         <img
                             class="w-16 h-16 md:h-36 md:w-36"
                             src={property.imageUrl}
