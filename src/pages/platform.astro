@@ -7,6 +7,7 @@ import Testimonials from "../components/Testimonials.astro";
 import Cost from "../components/Cost.astro";
 import OrderNow from "../components/OrderNow.astro";
 import Footer from "../components/Footer.astro";
+import Features from "../components/Features.astro";
 ---
 
 <PageLayout>
@@ -27,7 +28,31 @@ import Footer from "../components/Footer.astro";
         />
         <span class="mt-12 md:mt-24"></span>
         <BrandsAndChefs />
-        <Testimonials />
+        <Features
+            sectionTitle="Superior to traditional kitchens in every way"
+            properties={[
+                {
+                    title: "Product Capability",
+                    imageSrc: "/images/featureImages/consistency.png",
+                    description:
+                        "Supercharge your kitchen to cook any dish from any chef in the world. Not limited by local availability of chefs and not dependant on training.",
+                },
+                {
+                    title: "Product Consistency",
+                    imageSrc: "/images/featureImages/consistency.png",
+                    description:
+                        "Super human accuracy, underwritten by software automation, no more training and no more human errors",
+                },
+                {
+                    title: "No Training",
+                    imageSrc: "/images/featureImages/consistency.png",
+                    description:
+                        "Zero training required for new recipes from anywhere in the world",
+                },
+            ]}
+            "
+            <Testimonials
+        />
         <Cost />
         <OrderNow />
         <Footer />
