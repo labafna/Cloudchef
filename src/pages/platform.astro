@@ -13,7 +13,17 @@ import Footer from "../components/Footer.astro";
     <div class="flex flex-col">
         <ModeToggle selected="platform" />
         <span class="mt-12"></span>
-        <FoodBrandInfo />
+        <FoodBrandInfo
+            title="Serve Michelin-like dishes, with untrained staff"
+            description="End-to-end low cost automation suite to license and cook recipes from top food brands with super-human accuracy in your kitchens."
+            mobileBenefits="Increase demand, customer retention, and profitability with simpler operations"
+            preFace="FOR FOOD PLATFORMS"
+            benefits={[
+                "Increase demand",
+                "Customer retention",
+                "Profitability with simpler operations",
+            ]}
+        />
         <span class="mt-12 md:mt-24"></span>
         <BrandsAndChefs />
         <Testimonials />
