@@ -1,5 +1,5 @@
 ---
-import DesktopVideo from '../components/DesktopVideo.astro';
+import DesktopVideo from './DesktopVideo.tsx';
 
 const { preFace, title, description, benefits, mobileBenefits, buttonCTA } =
   Astro.props;
@@ -62,7 +62,7 @@ const { preFace, title, description, benefits, mobileBenefits, buttonCTA } =
   </div>
 
   <div class="mt-11 md:mt-0 ml-0 md:ml-14 relative">
-    <DesktopVideo />
+    <DesktopVideo client:visible/>
     <iframe
       class="md:hidden h-52 w-full rounded-lg"
       src="https://www.youtube.com/embed/INDhZ7LwSeo?si=aOSeIEgeMmn3cQmo"
