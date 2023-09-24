@@ -56,22 +56,22 @@ module.exports = {
 			'p2-d': ['16px', { lineHeight: '20px', }],
 			'p1-m': ['16px', { lineHeight: '20px', }],
 			'p2-m': ['14px', { lineHeight: '20px', }],
-			colors: {
-				deepBlack: '#16160e',
-				deepWhite: '#FFFFFF',
-				chalk: '#FFFFFC',
-				dough: '#fbfaf5',
-				greyYellowGreen: '#e6eae3',
-				buckwheaT: '#d4dcd6',
-				sageGreen: '#97a791',
-				willowGrey: '#c8d5bb',
-				greySilk: '#dddcd6',
-				moisture: '#c8c2be'
-			},
-			fontFamily: {
-				grotesk: ['Space Grotesk', 'sans-serif'],
-				inter: ['Inter', 'sans-serif']
-			},
+		},
+		colors: {
+			deepBlack: '#16160e',
+			deepWhite: '#FFFFFF',
+			chalk: '#FFFFFC',
+			dough: '#fbfaf5',
+			greyYellowGreen: '#e6eae3',
+			buckwheaT: '#d4dcd6',
+			sageGreen: '#97a791',
+			willowGrey: '#c8d5bb',
+			greySilk: '#dddcd6',
+			moisture: '#c8c2be'
+		},
+		fontFamily: {
+			grotesk: ['Space Grotesk', 'sans-serif'],
+			inter: ['Inter', 'sans-serif']
 		},
 		extend: {
 			padding: {
