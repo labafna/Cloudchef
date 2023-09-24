@@ -1,11 +1,11 @@
 ---
 import Nav from "../components/Nav.astro";
-import "@fontsource/space-grotesk/300.css"
+import "@fontsource/space-grotesk/300.css";
 import "@fontsource/space-grotesk";
-import "@fontsource/space-grotesk/400.css"
-import "@fontsource/space-grotesk/500.css"
-import "@fontsource/space-grotesk/600.css"
-import "@fontsource/space-grotesk/700.css"
+import "@fontsource/space-grotesk/400.css";
+import "@fontsource/space-grotesk/500.css";
+import "@fontsource/space-grotesk/600.css";
+import "@fontsource/space-grotesk/700.css";
 import "@fontsource/inter/300.css";
 import "@fontsource/inter";
 import "@fontsource/inter/500.css";
@@ -14,39 +14,37 @@ import "@fontsource/inter/700.css";
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.jpeg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<meta
-			name="description"
-			content="Discover the world with every bite. Dishes from sought-after global chefs and restaurants delivered to your doorstep. We're a food platform that delivers delicious food to your dinner table. Home Delivery and pickup available. Currently delivering to Mountain View, Palo Alto, Los Altos, Sunnyvale, Stanford, Menlo Park."
-		/>
-		<meta property="og:site_name" content="CloudChef" />
-		<meta
-			property="og:description"
-			content="Discover the world with every bite. Dishes from sought-after global chefs and restaurants delivered to your doorstep. We're a food platform that delivers delicious food to your dinner table. Home Delivery and pickup available. Currently delivering to Mountain View, Palo Alto, Los Altos, Sunnyvale, Stanford, Menlo Park."
-		/>
-		<meta
-			property="og:image"
-			content="http://www.cloudchef.co/cdn/shop/files/cloudchefwebp.png?v=1680575554"
-		/><meta name="twitter:site" content="@" />
-		<meta name="twitter:card" content="summary_large_image" />
-		<meta
-			name="twitter:title"
-			content="Culinary magic from around the world at your dinner table."
-		/>
-		<meta
-			name="twitter:description"
-			content="Discover the world with every bite. Dishes from sought-after global chefs and restaurants delivered to your doorstep. We're a food platform that delivers delicious food to your dinner table. Home Delivery and pickup available. Currently delivering to Mountain View, Palo Alto, Los Altos, Sunnyvale, Stanford, Menlo Park."
-		/>
-		<title>CloudChef</title>
-	</head>
-	<body class="font-inter bg-deepWhite">
-		<Nav />
-		<div class="mt-6 mt:mb-4">
-		<slot />
-		</div>
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.jpeg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <meta
+      name="description"
+      content="Discover the world with every bite. Dishes from sought-after global chefs and restaurants delivered to your doorstep. We're a food platform that delivers delicious food to your dinner table. Home Delivery and pickup available. Currently delivering to Mountain View, Palo Alto, Los Altos, Sunnyvale, Stanford, Menlo Park."
+    />
+    <meta property="og:site_name" content="CloudChef" />
+    <meta
+      property="og:description"
+      content="Discover the world with every bite. Dishes from sought-after global chefs and restaurants delivered to your doorstep. We're a food platform that delivers delicious food to your dinner table. Home Delivery and pickup available. Currently delivering to Mountain View, Palo Alto, Los Altos, Sunnyvale, Stanford, Menlo Park."
+    />
+    <meta
+      property="og:image"
+      content="http://www.cloudchef.co/cdn/shop/files/cloudchefwebp.png?v=1680575554"
+    /><meta name="twitter:site" content="@" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Culinary magic from around the world at your dinner table."
+    />
+    <meta
+      name="twitter:description"
+      content="Discover the world with every bite. Dishes from sought-after global chefs and restaurants delivered to your doorstep. We're a food platform that delivers delicious food to your dinner table. Home Delivery and pickup available. Currently delivering to Mountain View, Palo Alto, Los Altos, Sunnyvale, Stanford, Menlo Park."
+    />
+    <title>CloudChef</title>
+  </head>
+  <body class="font-inter bg-deepWhite">
+    <Nav />
+    <slot />
+  </body>
 </html>
