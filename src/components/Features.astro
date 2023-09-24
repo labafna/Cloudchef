@@ -2,8 +2,10 @@
 const { sectionTitle, properties } = Astro.props;
 ---
 
-<section class="flex flex-col py-4 px-5 md:py-18 md:px-18 w-full">
-  <h2 class="md:text-center text-h2-m md:text-h2-d font-grotesk font-medium">
+<section class="flex flex-col py-12 px-5 md:py-18 md:px-18 w-full">
+  <h2
+    class="md:text-center text-h2-m md:text-h2-d font-openSans md:font-grotesk font-medium"
+  >
     {sectionTitle}
   </h2>
   <div class="flex flex-col md:flex-row w-full gap-4 mt-4 md:mt-6 flex-wrap">
@@ -13,20 +15,26 @@ const { sectionTitle, properties } = Astro.props;
           imageUrl: string;
           title: string;
           description: string;
+          mobileImageUrl: string;
         }) => (
           <div
-            class="flex flex-col pt-8 pb-9 md:pt-12 md:pb-10 px-5 md:px-6 rounded-lg bg-dough text-deepBlack border border-solid border-greyYellowGreen"
+            class="flex flex-col pt-8 pb-9 md:pt-12 md:pb-10 px-5 md:px-6 rounded-lg md:bg-dough card-background text-deepBlack border border-solid border-cardBorderGrey md:border-greyYellowGreen"
             style="flex: 1 0 30%"
           >
             <img
-              class="w-16 h-16 md:h-36 md:w-36 m-2 md:m-4"
+              class="md:block hidden h-36 w-36 m-4"
               src={property.imageUrl}
               alt={`${property.title} visual rep`}
             />
-            <h2 class="text-h2-m md:text-h3-d font-medium font-grotesk mt-4">
+            <img
+              class="block md:hidden w-16 h-16 m-2"
+              src={property.mobileImageUrl}
+              alt={`${property.title} visual rep`}
+            />
+            <h2 class="text-h2-m md:text-h3-d font-bold md:font-medium font-openSans md:font-grotesk mt-4">
               {property.title}
             </h2>
-            <p class="text-p2-m md:text-p2-d font-semibold md:font-medium font-inter mt-2 md:mt-4">
+            <p class="text-p2-m md:text-p2-d font-normal md:font-medium font-inter mt-2 md:mt-4">
               {property.description}
             </p>
           </div>
@@ -35,3 +43,15 @@ const { sectionTitle, properties } = Astro.props;
     }
   </div>
 </section>
+
+<style>
+  @media (max-width: 768px) {
+    .cardBackground {
+      background: linear-gradient(
+        296deg,
+        rgba(207, 238, 255, 0.24) 1.04%,
+        rgba(243, 251, 255, 0) 100%
+      );
+    }
+  }
+</style>

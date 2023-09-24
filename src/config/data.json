@@ -18,16 +18,19 @@
         {
           "title": "Food Consistency",
           "imageUrl": "/images/featureImages/consistency.png",
+          "mobileImageUrl": "/images/featureImages/consistency_m.png",
           "description": "Better consistency than trained chefs. Task-level audit in the kitchen"
         },
         {
           "title": "Revenue Growth",
           "imageUrl": "/images/featureImages/revenueGrowth.png",
+          "mobileImageUrl": "/images/featureImages/revenueGrowth_m.png",
           "description": "Tap into your franchise demand, scale faster while retaining brand equity"
         },
         {
           "title": "Skill Independent",
           "imageUrl": "/images/featureImages/skillindepedent.png",
+          "mobileImageUrl": "/images/featureImages/skillindepedent_m.png",
           "description": "No training to launch menus"
         }
       ]
@@ -66,16 +69,19 @@
         {
           "title": "Licensing breadth",
           "imageUrl": "/images/featureImages/licensingbreadth.png",
+          "mobileImageUrl": "/images/featureImages/licensingbreadth_m.png",
           "description": "License and onboard recipes from any brand/chef in the world, not just local chefs"
         },
         {
           "title": "Food Consistency",
           "imageUrl": "/images/featureImages/consistency.png",
+          "mobileImageUrl": "/images/featureImages/consistency_m.png",
           "description": "Better consistency than trained chefs. Task-level audit in the kitchen."
         },
         {
           "title": "Skill Independent",
           "imageUrl": "/images/featureImages/skillindepedent.png",
+          "mobileImageUrl": "/images/featureImages/skillindepedent_m.png",
           "description": "No training to launch menus."
         }
       ]

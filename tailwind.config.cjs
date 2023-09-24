@@ -62,6 +62,8 @@ module.exports = {
       greySilk: "#dddcd6",
       moisture: "#c8c2be",
       lightBlue: "#96F7FD",
+      cardBorderGrey: "#E4EEFE",
+      testimonyBg: "#F0FBFE",
     },
     fontFamily: {
       grotesk: ["Space Grotesk", "sans-serif"],

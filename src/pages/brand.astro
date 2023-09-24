@@ -9,6 +9,7 @@ import Cost from "../components/Cost.astro";
 import OrderNow from "../components/OrderNow.astro";
 import Footer from "../components/Footer.astro";
 import Features from "../components/Features.astro";
+import MobileVideo from "../components/MobileVideo.astro";
 
 import data from "../config/data.json";
 ---
@@ -23,6 +24,7 @@ import data from "../config/data.json";
     <Chef />
     <News />
     <Features {...data.brand.features} />
+    <MobileVideo videoUrl={data.brand.foodBrandInfo.videoUrl} />
     <Testimonials {...data.brand.testimonial} />
     <Cost {...data.brand.offer} />
     <OrderNow />

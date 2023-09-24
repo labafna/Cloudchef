@@ -3,10 +3,12 @@ const { testimony, author, restaurantImage } = Astro.props;
 ---
 
 <section
-  class="flex items-center bg-dough text-deepBlack px-5 md:pr-0 md:pl-16 py-16"
+  class="flex items-center bg-testimonyBg md:bg-dough text-deepBlack px-5 md:pr-0 md:pl-16 py-8"
 >
   <div class="md:mr-9">
-    <h2 class="text-h2-m md:text-h2-d font-grotesk font-medium break-words">
+    <h2
+      class="text-h2-m md:text-h2-d font-openSans md:font-grotesk font-bold md:font-medium break-words"
+    >
       {testimony}
     </h2>
     <div class="flex mt-5 items-center">
