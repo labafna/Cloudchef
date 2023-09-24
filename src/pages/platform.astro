@@ -14,7 +14,7 @@ import data from "../config/data.json";
 
 <PageLayout>
   <div class="flex flex-col">
-    <ModeToggle selectedMode="platform" />
+    <ModeToggle selectedMode="platform" client:load />
     <span class="mt-12"></span>
     <FoodBrandInfo {...data.platform.foodBrandInfo} />
     <span class="mt-12 md:mt-24"></span>

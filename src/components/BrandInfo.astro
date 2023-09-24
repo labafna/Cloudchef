@@ -1,5 +1,6 @@
 ---
 import DesktopVideo from "./DesktopVideo.tsx";
+import { ContactUsButton } from "./ContactUsButton.tsx";
 
 const {
   preFace,
@@ -45,13 +46,12 @@ const {
       }
     </ul>
 
-    <button
-      class="hidden md:block bg-deepBlack rounded-xl mt-14 px-6 py-3 text-p2-d font-inter font-semibold text-deepWhite"
-    >
-      <a class="w-full" href="https://cloudchef.co" target="_blank">
-        {buttonCTA}
-      </a>
-    </button>
+    <ContactUsButton
+      client:visible
+      buttonCTA={buttonCTA}
+      formTitle="Request for a demo here"
+      className="hidden md:block"
+    />
   </div>
   <!-- --------------------- -->
 

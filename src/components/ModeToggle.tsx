@@ -10,6 +10,7 @@ const ModeToggle = ({ selectedMode, onModeChange }: {selectedMode: string; onMod
           id === selectedMode ? "font-semibold bg-greyYellowGreen " : ""
         }`}
         onClick={onModeChange}
+        key={id}
         data-id={id}
       >
         <a href={id}>

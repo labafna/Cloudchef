@@ -1,21 +1,13 @@
-import { useState, useCallback } from 'react';
+import {useVisibilityToggle} from '../hooks/useVisibilityToggle';
 import type { ReactElement } from 'react';
 
 const DesktopVideo = ({ videoUrl }: { videoUrl: string }): ReactElement => {
-  const [isOverlayVisible, setOverlayVisible] = useState(false)
-
-  const showOverlay = useCallback(() => {
-    setOverlayVisible(true)
-  }, []);
-
-  const hideOverlay = useCallback(() => {
-    setOverlayVisible(false);
-  }, []);
-
+  const { isVisible: isOverlayVisible, show: showOverlay, hide: hideOverlay} = useVisibilityToggle(false);
+  
   return (<>
   <button
     id="preview-button"
-    className="hidden md:block relative group cursor-pointer"
+    className="hidden md:block relative cursor-pointer"
     onClick={showOverlay}
   >
     <img
@@ -24,7 +16,7 @@ const DesktopVideo = ({ videoUrl }: { videoUrl: string }): ReactElement => {
       style={{height: "512px", width: "368px"}}
     />
     <div
-      className="hidden group-hover:flex absolute inset-0 items-center justify-center"
+      className="flex absolute inset-0 items-center justify-center"
     >
       <img src="/images/play.png" />
     </div>

@@ -78,7 +78,8 @@ module.exports = {
 				18: '4.5rem'
 			},
 			borderRadius: {
-				20: '20px'
+				20: '20px',
+				4: '4px'
 			}
 		},
 	},
