@@ -50,7 +50,7 @@ const {
       client:visible
       buttonCTA={buttonCTA}
       formTitle="Request for a demo here"
-      className="hidden md:block"
+      className="mt-14 hidden md:block"
     />
   </div>
   <!-- --------------------- -->
@@ -61,11 +61,12 @@ const {
     <h3 class="text-h3-m font-grotesk font-medium text-deepBlack">
       {mobileBenefits}
     </h3>
-    <button
-      class="mt-2 px-6 py-3 bg-deepBlack rounded-xl text-deepWhite text-p2-m font-semibold font-inter"
-    >
-      {buttonCTA}
-    </button>
+    <ContactUsButton
+      client:visible
+      buttonCTA={buttonCTA}
+      formTitle="Request for a demo here"
+      className="mt-2"
+    />
   </div>
 
   <div class="mt-11 md:mt-0 ml-0 md:ml-14 relative">

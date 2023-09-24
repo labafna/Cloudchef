@@ -79,7 +79,7 @@ const ContactUsButton = ({ buttonCTA, formTitle, className }: {buttonCTA:string;
   return (
     <>
       <button
-        className={`bg-deepBlack rounded-xl mt-14 px-6 py-3 text-p2-d font-inter font-semibold text-deepWhite ${className}`}
+        className={`bg-deepBlack rounded-xl px-6 py-3 text-p2-m md:text-p2-d font-inter font-semibold text-deepWhite ${className}`}
         onClick={show}
       >
         {buttonCTA}

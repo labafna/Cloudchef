@@ -1,24 +1,25 @@
 ---
+import { ContactUsButton } from "./ContactUsButton.tsx";
+
 const { title, highlight, buttonCTA } = Astro.props;
 ---
 
-<section class="text-center flex-col py-14 md:py-32 px-5">
+<section class="flex flex-col py-14 md:py-32 px-5 items-center">
   <h3
     class="text-h2-m md:text-h3-d font-grotesk font-medium text-center text-deepBlack"
   >
     {title}
   </h3>
   <h1
-    class="text-h1-m font-grotesk md:text-h1-d font-medium mt-4 text-deepBlack"
+    class="text-center text-h1-m font-grotesk md:text-h1-d font-medium mt-4 text-deepBlack"
     style="color: #16160E"
   >
     {highlight}
   </h1>
-  <button
-    class="bg-black rounded-xl mt-8 px-6 py-3 text-p2-d bg-deepBlack text-deepWhite font-semibold"
-  >
-    <a class="w-full" href="https://cloudchef.co" target="_blank">
-      {buttonCTA}
-    </a>
-  </button>
+  <ContactUsButton
+    client:visible
+    buttonCTA={buttonCTA}
+    formTitle="Request for a demo here"
+    className="mt-8 text-p2-d"
+  />
 </section>
