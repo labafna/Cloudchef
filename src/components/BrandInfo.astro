@@ -69,7 +69,10 @@ const {
   </div>
 
   <div class="mt-11 md:mt-0 ml-0 md:ml-14 relative">
-    <DesktopVideo client:only="react" videoUrl={videoUrl} />
+    <!-- Required to avoid layout shifts when DesktopVideo component gets hydrated -->
+    <div class="hidden md:block" style={{ height: "512px", width: "368px" }}>
+      <DesktopVideo client:only="react" videoUrl={videoUrl} />
+    </div>
     <iframe
       class="md:hidden h-52 w-full rounded-lg"
       src={videoUrl}

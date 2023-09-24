@@ -8,14 +8,13 @@ const DesktopVideo = ({ videoUrl }: { videoUrl: string }): ReactElement => {
   <button
     id="preview-button"
     aria-label="video preview button"
-    className="hidden md:block relative cursor-pointer"
+    className="h-full w-full relative cursor-pointer"
     onClick={showOverlay}
   >
     <img
       src="/images/video_thumbnail.png"
-      className="rounded-xl"
+      className="h-full w-full rounded-xl"
       alt="cloudchef video thumbnail"
-      style={{height: "512px", width: "368px"}}
     />
     <div
       className="flex absolute inset-0 items-center justify-center"
