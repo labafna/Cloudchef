@@ -1,6 +1,7 @@
 ---
 import DesktopVideo from "./DesktopVideo.tsx";
 import { ContactUsButton } from "./ContactUsButton.tsx";
+import { MobileVideoWithModal } from "./MobileVideoWithModal.tsx";
 
 const { preFace, title, description, benefits, buttonCTA, videoUrl } =
   Astro.props;
@@ -50,11 +51,17 @@ const { preFace, title, description, benefits, buttonCTA, videoUrl } =
     <!-- --------------------- -->
 
     <!-- Only for Mobiles -->
-    <div class="flex md:hidden mt-11 gap-8">
+    <div class="flex md:hidden mt-11 gap-2">
       <ContactUsButton
         client:visible
         buttonCTA={buttonCTA}
         formTitle="Request for a demo here"
+        className="flex-1"
+      />
+      <MobileVideoWithModal
+        client:only="react"
+        videoUrl={videoUrl}
+        className="flex-1"
       />
     </div>
     <!-- ------------------ -->
