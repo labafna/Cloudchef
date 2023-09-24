@@ -79,7 +79,13 @@ function Form({
             htmlFor="brandName"
             className="text-p2-m font-inter font-medium"
           >
-            Brand/Platform Name*
+            Brand/Platform Name
+            <span
+              className="text-p0-m font-medium font-inter"
+              style={{ color: "#636363" }}
+            >
+              (optional)
+            </span>
           </label>{" "}
           <br />
           <input
@@ -87,7 +93,6 @@ function Form({
             className="w-full inline-block rounded-4 mt-1 px-3 py-5 h-5 bg-deepWhite border border-solid border-dough"
             placeholder="Type here"
             name="brandName"
-            required
           ></input>
         </p>
         <p className="w-full">
