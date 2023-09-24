@@ -1,36 +1,46 @@
+---
+const { testimony, author, restaurantImage } = Astro.props;
+---
+
 <div
-    class="flex items-center bg-dough text-deepBlack px-5 md:pr-0 md:pl-16 py-16"
+  class="flex items-center bg-dough text-deepBlack px-5 md:pr-0 md:pl-16 py-16"
 >
-    <div class="md:mr-9">
-        <h2 class="text-h2-m md:text-h2-d font-grotesk font-medium break-words">
-            “I’ve gotten a lot of inbound franchise requests for my brands but have never been able to scale because my recipes require culinary knowledge and skill to prepare.”
-        </h2>
-        <div class="flex mt-5 items-center">
-            <img
-                src="/images/testimonial_m.jpg"
-                alt="chef's image"
-                class="block md:hidden h-11 w-11 rounded-full mr-3 "
-            />
-            <img
-                src="/images/testimonial.jpg"
-                alt="chef's image"
-                class="hidden md:block h-11 w-11 rounded-full mr-3 "
-            />
-            <div class="flex-col">
-                <div class="text-p1-m md:text-p1-d font-inter font-semibold break-words">
-                    Srijith Gopinathan
-                </div>
-                <div class="mt-1 text-p1-m md:text-p1-d font-inter font-normal break-words">
-                    2 Michelin Chef
-                </div>
-            </div>
-        </div>
-    </div>
-    <img
-        src="/images/restaurant.png"
+  <div class="md:mr-9">
+    <h2 class="text-h2-m md:text-h2-d font-grotesk font-medium break-words">
+      “I’ve gotten a lot of inbound franchise requests for my brands but have
+      never been able to scale because my recipes require culinary knowledge and
+      skill to prepare.”
+    </h2>
+    <div class="flex mt-5 items-center">
+      <img
+        src="/images/testimonial_m.jpg"
         alt="chef's image"
-        class="hidden md:block"
-        width="400px"
-        height="368px"
-    />
+        class="block md:hidden h-11 w-11 rounded-full mr-3"
+      />
+      <img
+        src={author.image}
+        alt="chef's image"
+        class="hidden md:block h-11 w-11 rounded-full mr-3"
+      />
+      <div class="flex-col">
+        <div
+          class="text-p1-m md:text-p1-d font-inter font-semibold break-words"
+        >
+          {author.name}
+        </div>
+        <div
+          class="mt-1 text-p1-m md:text-p1-d font-inter font-normal break-words"
+        >
+          {author.workspace}
+        </div>
+      </div>
+    </div>
+  </div>
+  <img
+    src={restaurantImage}
+    alt="chef's image"
+    class="hidden md:block"
+    width="400px"
+    height="368px"
+  />
 </div>

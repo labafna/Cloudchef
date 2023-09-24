@@ -1,7 +1,7 @@
 import { useState, useCallback } from 'react';
 import type { ReactElement } from 'react';
 
-const DesktopVideo = (): ReactElement => {
+const DesktopVideo = ({ videoUrl }: { videoUrl: string }): ReactElement => {
   const [isOverlayVisible, setOverlayVisible] = useState(false)
 
   const showOverlay = useCallback(() => {
@@ -37,7 +37,7 @@ const DesktopVideo = (): ReactElement => {
     <iframe
       id="youtube-video-iframe"
       className="h-4/6 w-4/6 rounded-xl"
-      src="https://www.youtube.com/embed/INDhZ7LwSeo?si=aOSeIEgeMmn3cQmo&autoplay=1"
+      src={`${videoUrl}&autoplay=1`}
       title="YouTube video player"
       frameBorder="0"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"

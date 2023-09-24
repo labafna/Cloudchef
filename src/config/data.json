@@ -1,0 +1,106 @@
+{
+  "brand": {
+    "foodBrandInfo": {
+      "title": "Scale to 100s of outlets, with perfect consistency",
+      "description": "Easy to integrate automation suite for your kitchen fleet to perfectly execute your menu, with untrained staff, anywhere in the world.",
+      "mobileBenefits": "Easy to integrate, low-cost automation suite for your kitchens. No training required!",
+      "preFace": "FOR FOOD BRANDS",
+      "benefits": [
+        "Tap into unrealized revenue",
+        "Build a global brand",
+        "Retain more customers"
+      ],
+      "buttonCTA": "Get a Demo Now",
+      "videoUrl": "https://www.youtube.com/embed/INDhZ7LwSeo?si=aOSeIEgeMmn3cQmo"
+    },
+    "features": {
+      "sectionTitle":"Superior to traditional scaling in every way",
+      "properties": [
+        {
+          "title": "Production Consistency",
+          "imageUrl": "/images/featureImages/consistency.png",
+          "description":
+            "Super human accuracy, underwritten by software automation, no more training and no more human errors"
+        },
+        {
+          "title": "Brand Scalability",
+          "imageUrl": "/images/featureImages/scalability.png",
+          "description":
+            "Spread your brands wings globally with trust and confidence. Retain brand equity, customer trust."
+        },
+        {
+          "title": "Revenue growth",
+          "imageUrl": "/images/featureImages/revenueGrowth.png",
+          "description":
+            "Scale faster while retaining brand equity. Build consumer trust and increase profitability"
+        }
+      ]
+    },
+    "testimonial": {
+      "testimony": "“I’ve gotten a lot of inbound franchise requests for my brands but have never been able to scale because my recipes require culinary knowledge and skill to prepare.”",
+      "author": {
+        "name": "Srijith Gopinathan",
+        "workspace": "2 Michelin Chef",
+        "image": "/images/testimonial.jpg"
+      },
+      "restaurantImage": "/images/restaurant.png"
+    },
+    "offer": {
+      "title": "Book a demo today and get the first",
+      "highlight": "2 months free",
+      "buttonCTA": "Get a Demo Now"
+    }
+  },
+  "platform": {
+    "foodBrandInfo": {
+      "title": "Serve Michelin-like dishes, with untrained staff",
+      "description": "End-to-end low cost automation suite to license and cook recipes from top food brands with super-human accuracy in your kitchens.",
+      "mobileBenefits": "Increase demand, customer retention, and profitability with simpler operations",
+      "preFace": "FOR FOOD PLATFORMS",
+      "benefits": [
+        "Increase demand",
+        "Customer retention",
+        "Profitability with simpler operations"
+      ],
+      "buttonCTA": "Start Licensing",
+      "videoUrl": "https://www.youtube.com/embed/INDhZ7LwSeo?si=aOSeIEgeMmn3cQmo"
+    },
+    "features": {
+      "sectionTitle":"Superior to traditional kitchens in every way",
+      "properties": [
+        {
+          "title": "Product Capability",
+          "imageUrl": "/images/featureImages/consistency.png",
+          "description":
+            "Supercharge your kitchen to cook any dish from any chef in the world. Not limited by local availability of chefs and not dependant on training."
+        },
+        {
+          "title": "Product Consistency",
+          "imageUrl": "/images/featureImages/consistency.png",
+          "description":
+            "Super human accuracy, underwritten by software automation, no more training and no more human errors"
+        },
+        {
+          "title": "No Training",
+          "imageUrl": "/images/featureImages/consistency.png",
+          "description":
+            "Zero training required for new recipes from anywhere in the world"
+        }
+      ]
+    },
+    "testimonial": {
+      "testimony": "“I’ve gotten a lot of inbound franchise requests for my brands but have never been able to scale because my recipes require culinary knowledge and skill to prepare.”",
+      "author": {
+        "name": "Srijith Gopinathan",
+        "workspace": "2 Michelin Chef",
+        "image": "/images/testimonial.jpg"
+      },
+      "restaurantImage": "/images/restaurant.png"
+    },
+    "offer": {
+      "title": "Book a demo today and get the first",
+      "highlight": "2 months free",
+      "buttonCTA": "Get a Demo Now"
+    }
+  }
+}

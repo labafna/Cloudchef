@@ -1,6 +1,6 @@
 ---
 import PageLayout from "../layouts/pageLayout.astro";
-import ModeToggle from "../components/ModeToggle.astro";
+import ModeToggle from "../components/ModeToggle.tsx";
 import FoodBrandInfo from "../components/BrandInfo.astro";
 import BrandsAndChefs from "../components/BrandsAndChefs.astro";
 import Testimonials from "../components/Testimonials.astro";
@@ -8,52 +8,21 @@ import Cost from "../components/Cost.astro";
 import OrderNow from "../components/OrderNow.astro";
 import Footer from "../components/Footer.astro";
 import Features from "../components/Features.astro";
+
+import data from "../config/data.json";
 ---
 
 <PageLayout>
-    <div class="flex flex-col">
-        <ModeToggle selected="brand" />
-        <span class="mt-12"></span>
-        <FoodBrandInfo
-            title="Scale to 100s of outlets, with perfect consistency"
-            description="Easy to integrate automation suite for your kitchen fleet to perfectly execute your menu, with untrained staff, anywhere in the world."
-            mobileBenefits="Tap into unrealized revenue, build a global brand & retain more customers."
-            preFace="FOR FOOD BRANDS"
-            benefits={[
-                "Tap into unrealized revenue",
-                "Build a global brand",
-                "Retain more customers",
-            ]}
-            buttonCTA="Get a Demo Now"
-        />
-        <span class="mt-12 md:mt-24"></span>
-        <BrandsAndChefs />
-        <Features
-            sectionTitle="Superior to traditional scaling in every way"
-            properties={[
-                {
-                    title: "Production Consistency",
-                    description:
-                        "Super human accuracy, underwritten by software automation, no more training and no more human errors",
-                    imageUrl: "/images/featureImages/consistency.png",
-                },
-                {
-                    title: "Brand Scalability",
-                    description:
-                        "Spread your brands wings globally with trust and confidence. Retain brand equity, customer trust.",
-                    imageUrl: "/images/featureImages/scalability.png",
-                },
-                {
-                    title: "Revenue growth",
-                    description:
-                        "Scale faster while retaining brand equity. Build consumer trust and increase profitability",
-                    imageUrl: "/images/featureImages/revenueGrowth.png",
-                },
-            ]}
-        />
-        <Testimonials />
-        <Cost />
-        <OrderNow />
-        <Footer />
-    </div>
+  <div class="flex flex-col">
+    <ModeToggle selectedMode="brand" />
+    <span class="mt-12"></span>
+    <FoodBrandInfo {...data.brand.foodBrandInfo} />
+    <span class="mt-12 md:mt-24"></span>
+    <BrandsAndChefs />
+    <Features {...data.brand.features} />
+    <Testimonials {...data.brand.testimonial} />
+    <Cost {...data.brand.offer} />
+    <OrderNow />
+    <Footer />
+  </div>
 </PageLayout>

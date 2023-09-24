@@ -1,0 +1,3 @@
+{
+  "availableMode": [{ "id": "brand", "label":"Food Brands" }, { "id": "platform", "label": "Food Platforms"}]
+}
