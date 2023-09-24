@@ -56,8 +56,6 @@ module.exports = {
 			'p2-d': ['16px', { lineHeight: '20px', }],
 			'p1-m': ['16px', { lineHeight: '20px', }],
 			'p2-m': ['14px', { lineHeight: '20px', }],
-		},
-		extend: {
 			colors: {
 				deepBlack: '#16160e',
 				deepWhite: '#FFFFFF',
@@ -74,6 +72,8 @@ module.exports = {
 				grotesk: ['Space Grotesk', 'sans-serif'],
 				inter: ['Inter', 'sans-serif']
 			},
+		},
+		extend: {
 			padding: {
 				18: '4.5rem'
 			},
