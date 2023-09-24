@@ -2,8 +2,8 @@
   "brand": {
     "foodBrandInfo": {
       "title": "Scale to 100s of outlets, with perfect consistency",
-      "description": "Easy to integrate automation suite for your kitchen fleet to perfectly execute your menu, with untrained staff, anywhere in the world.",
-      "mobileBenefits": "Easy to integrate, low-cost automation suite for your kitchens. No training required!",
+      "description": "Easy to integrate, intelligent, low-cost automation suite for your kitchen. No skilled staff required!",
+      "mobileBenefits": "Easy to integrate, intelligent, low-cost automation suite for your kitchen. No skilled staff required!",
       "preFace": "FOR FOOD BRANDS",
       "benefits": [
         "Tap into unrealized revenue",
@@ -17,27 +17,27 @@
       "sectionTitle":"Superior to traditional scaling in every way",
       "properties": [
         {
-          "title": "Production Consistency",
+          "title": "Food Consistency",
           "imageUrl": "/images/featureImages/consistency.png",
           "description":
-            "Super human accuracy, underwritten by software automation, no more training and no more human errors"
+            "Better consistency than trained chefs. Task-level audit in the kitchen"
         },
         {
-          "title": "Brand Scalability",
-          "imageUrl": "/images/featureImages/scalability.png",
+          "title": "Revenue Growth",
+          "imageUrl": "/images/featureImages/revenuegrowth.png",
           "description":
-            "Spread your brands wings globally with trust and confidence. Retain brand equity, customer trust."
+            "Tap into your franchise demand, scale faster while retaining brand equity"
         },
         {
-          "title": "Revenue growth",
-          "imageUrl": "/images/featureImages/revenueGrowth.png",
+          "title": "Skill Independent",
+          "imageUrl": "/images/featureImages/skillindepedent.png",
           "description":
-            "Scale faster while retaining brand equity. Build consumer trust and increase profitability"
+            "No training to launch menus"
         }
       ]
     },
     "testimonial": {
-      "testimony": "“I’ve gotten a lot of inbound franchise requests for my brands but have never been able to scale because my recipes require culinary knowledge and skill to prepare.”",
+      "testimony": "“Consistency and hiring skilled staff have been the big limiters in scaling my food business. With CloudChef, I am able to scale with consistency and practically no training.”",
       "author": {
         "name": "Srijith Gopinathan",
         "workspace": "2 Michelin Chef",
@@ -54,7 +54,7 @@
   "platform": {
     "foodBrandInfo": {
       "title": "Serve Michelin-like dishes, with untrained staff",
-      "description": "End-to-end low cost automation suite to license and cook recipes from top food brands with super-human accuracy in your kitchens.",
+      "description": "End-to-end low cost automation suite for you to license and cook recipes from top food brands with super-human consistency",
       "mobileBenefits": "Increase demand, customer retention, and profitability with simpler operations",
       "preFace": "FOR FOOD PLATFORMS",
       "benefits": [
@@ -66,34 +66,34 @@
       "videoUrl": "https://www.youtube.com/embed/INDhZ7LwSeo?si=aOSeIEgeMmn3cQmo"
     },
     "features": {
-      "sectionTitle":"Superior to traditional kitchens in every way",
+      "sectionTitle":"Superior to traditional licensing in every way",
       "properties": [
         {
-          "title": "Product Capability",
-          "imageUrl": "/images/featureImages/consistency.png",
+          "title": "Licensing breadth",
+          "imageUrl": "/images/featureImages/licensingbreadth.png",
           "description":
-            "Supercharge your kitchen to cook any dish from any chef in the world. Not limited by local availability of chefs and not dependant on training."
+            "License and onboard recipes from any brand/chef in the world, not just local chefs"
         },
         {
-          "title": "Product Consistency",
+          "title": "Food Consistency",
           "imageUrl": "/images/featureImages/consistency.png",
           "description":
-            "Super human accuracy, underwritten by software automation, no more training and no more human errors"
+            "Better consistency than trained chefs. Task-level audit in the kitchen."
         },
         {
-          "title": "No Training",
-          "imageUrl": "/images/featureImages/consistency.png",
+          "title": "Skill Independent",
+          "imageUrl": "/images/featureImages/skillindepedent.png",
           "description":
-            "Zero training required for new recipes from anywhere in the world"
+            "No training to launch menus."
         }
       ]
     },
     "testimonial": {
-      "testimony": "“I’ve gotten a lot of inbound franchise requests for my brands but have never been able to scale because my recipes require culinary knowledge and skill to prepare.”",
+      "testimony": "“Our stadium attendees have been loving CloudChefs dishes have been a talking point for our fans and teams. MLC is delighted to have dishes from some of the most iconic chefs from India served here in Texas and bring a further innovative element to American sports with our CloudChef partnership”",
       "author": {
-        "name": "Srijith Gopinathan",
-        "workspace": "2 Michelin Chef",
-        "image": "/images/testimonial.jpg"
+        "name": "Sameer Mehta",
+        "workspace": "CEO, Major League Cricket",
+        "image": "/images/testimony2.png"
       },
       "restaurantImage": "/images/restaurant.png"
     },
