@@ -9,7 +9,7 @@
         "Build a global brand",
         "Retain more customers"
       ],
-      "buttonCTA": "Get a Demo Now",
+      "buttonCTA": "Book Demo",
       "videoUrl": "https://www.youtube.com/embed/INDhZ7LwSeo?si=aOSeIEgeMmn3cQmo"
     },
     "features": {
@@ -47,7 +47,7 @@
     "offer": {
       "title": "Book a demo today and get the first",
       "highlight": "2 months free",
-      "buttonCTA": "Get a Demo Now"
+      "buttonCTA": "Book Demo"
     }
   },
   "platform": {
@@ -60,7 +60,7 @@
         "Customer retention",
         "Profitability with simpler operations"
       ],
-      "buttonCTA": "Start Licensing",
+      "buttonCTA": "Book Demo",
       "videoUrl": "https://www.youtube.com/embed/INDhZ7LwSeo?si=aOSeIEgeMmn3cQmo"
     },
     "features": {
@@ -98,7 +98,7 @@
     "offer": {
       "title": "Book a demo today and get the first",
       "highlight": "2 months free",
-      "buttonCTA": "Get a Demo Now"
+      "buttonCTA": "Book Demo"
     }
   }
 }
