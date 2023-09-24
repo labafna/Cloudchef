@@ -31,7 +31,11 @@ function Form({
         <input type="hidden" name="_cc" value="Aloor@cloudchef.co"></input>
         <input type="hidden" name="_captcha" value="false"></input>
         <input type="hidden" name="_subject" value="New form response"></input>
-        <input type="hidden" name="_next" value="pages/index.astro"></input>
+        <input
+          type="hidden"
+          name="_next"
+          value="https://cloudchef.vercel.app/brand"
+        ></input>
         <p className="w-full">
           <label htmlFor="name" className="text-p2-m font-inter font-medium">
             Name*
