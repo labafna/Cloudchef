@@ -40,7 +40,8 @@ const MobileVideoWithModal = ({
           </button>
           <iframe
             id="youtube-video-iframe"
-            className="h-4/6 w-4/6 rounded-xl"
+            className="h-4/6 rounded-xl"
+            style={{ width: "88.8%" }}
             src={`${videoUrl}&autoplay=1`}
             title="YouTube video player"
             frameBorder="0"
