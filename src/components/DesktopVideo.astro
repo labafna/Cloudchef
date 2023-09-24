@@ -1,0 +1,75 @@
+<button
+  id="preview-button"
+  class="hidden md:block relative group cursor-pointer"
+>
+  <img
+    src="/images/video_thumbnail.png"
+    class="rounded-xl"
+    style="height: 512px; width: 368px"
+  />
+  <div
+    class="hidden group-hover:flex absolute inset-0 items-center justify-center"
+  >
+    <img src="/images/play.png" />
+  </div>
+</button>
+<!-- Use the Overlay component conditionally -->
+<div
+  id="preview-overlay"
+  class="hidden fixed inset-0 w-full h-full justify-center items-center bg-deepBlack bg-opacity-75 z-20"
+>
+<button id="close-overlay" class="absolute top-4 right-6 hover:rounded-full hover:bg-deepBlack px-2"><span class="text-p2-m font-grotesk text-deepWhite ">X</span></button>
+  <iframe
+    id="youtube-video-iframe"
+    class="h-4/6 w-4/6 rounded-xl"
+    src="https://www.youtube.com/embed/INDhZ7LwSeo?si=aOSeIEgeMmn3cQmo&enablejsapi=1"
+    title="YouTube video player"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowfullscreen
+  >
+  </iframe>
+</div>
+
+<script>
+  const previewBtn = document.getElementById("preview-button");
+  const closeOverlayBtn = document.getElementById("close-overlay");
+  const overlay = document.getElementById("preview-overlay");
+  const youtubeVideoIframe = document.getElementById(
+    "youtube-video-iframe"
+  ) as HTMLIFrameElement;
+
+
+  const playVideo = () => {
+    youtubeVideoIframe.contentWindow!.postMessage(
+      JSON.stringify({ event: "command", func: "playVideo", args: "" }),
+      "*"
+    );
+  }
+
+  const showOverlay = () => {
+    overlay!.classList.remove("hidden");
+    overlay!.classList.add("flex");
+    document.body.classList.add('overflow-hidden');
+    playVideo();
+  };
+
+  const stopPlayingVideo = () => {
+    youtubeVideoIframe.contentWindow!.postMessage(
+      JSON.stringify({ event: "command", func: "stopVideo", args: "" }),
+      "*"
+    );
+  };
+
+  const hideOverlay = () => {
+    stopPlayingVideo();
+    overlay!.classList.remove("flex");
+    overlay!.classList.add("hidden");
+    document.body.classList.remove('overflow-hidden');
+  };
+
+  previewBtn!.addEventListener("click", showOverlay);
+
+  closeOverlayBtn!.addEventListener("click", hideOverlay);
+  overlay!.addEventListener("click", hideOverlay);
+</script>

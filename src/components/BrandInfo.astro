@@ -1,4 +1,6 @@
 ---
+import DesktopVideo from '../components/DesktopVideo.astro';
+
 const { preFace, title, description, benefits, mobileBenefits, buttonCTA } =
   Astro.props;
 ---
@@ -60,18 +62,7 @@ const { preFace, title, description, benefits, mobileBenefits, buttonCTA } =
   </div>
 
   <div class="mt-11 md:mt-0 ml-0 md:ml-14 relative">
-    <div class="relative group cursor-pointer">
-      <img
-        src="/images/video_thumbnail.png"
-        class="hidden md:block rounded-xl"
-        style="height: 512px; width: 368px"
-      />
-      <div
-        class="hidden group-hover:flex absolute inset-0 items-center justify-center"
-      >
-        <img src="/images/play.png" />
-      </div>
-    </div>
+    <DesktopVideo />
     <iframe
       class="md:hidden h-52 w-full rounded-lg"
       src="https://www.youtube.com/embed/INDhZ7LwSeo?si=aOSeIEgeMmn3cQmo"
