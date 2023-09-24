@@ -13,7 +13,7 @@ const { preFace, title, description, benefits, buttonCTA, videoUrl } =
       >{preFace}</span
     >
     <h1
-      class="text-h1-m md:text-h1-d font-openSans md:font-grotesk text-deepBlack font-medium"
+      class="titleStyle text-h1-m md:text-h1-d font-openSans md:font-grotesk text-deepBlack font-bold md:font-medium"
     >
       {title}
     </h1>
@@ -67,3 +67,14 @@ const { preFace, title, description, benefits, buttonCTA, videoUrl } =
     <DesktopVideo client:only="react" videoUrl={videoUrl} />
   </div>
 </div>
+
+<style>
+  @media (max-width: 768px) {
+    .titleStyle {
+      background: linear-gradient(104deg, #00353b 0.86%, #57005f 104.29%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+</style>

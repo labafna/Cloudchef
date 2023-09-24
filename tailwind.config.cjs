@@ -22,9 +22,9 @@ module.exports = {
         },
       ],
       "h1-m": [
-        "32px",
+        "36px",
         {
-          lineHeight: "36px",
+          lineHeight: "40px",
         },
       ],
       "h2-m": [

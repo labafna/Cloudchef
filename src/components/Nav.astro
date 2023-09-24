@@ -1,10 +1,17 @@
-<nav class="flex items-center justify-between px-5 md:px-16 py-4 md:py-6 bg-chalk sticky top-0 z-10 border-b border-solid border-greySilk">
-    <div class="text-deepBlack font-grotesk text-h3-m md:text-h3-d font-medium">CloudChef</div>
-    <button class="bg-deepBlack rounded-xl">
-        <a class="w-full" href="https://cloudchef.co" target="_blank">
-            <div class="text-deepWhite font-inter text-p2-d mx-4 my-2 md:mx-6 md:my-3">
-                Order Food in SF
-            </div>
-        </a>
-    </button>
+---
+import { ContactUsButton } from "./ContactUsButton";
+---
+
+<nav
+  class="flex items-center justify-between px-5 md:px-16 py-3 md:py-6 bg-chalk sticky top-0 z-10 border-b border-solid border-greySilk"
+>
+  <div
+    class="text-deepBlack font-openSans text-h2-m md:text-h3-d font-bold md:font-grotesk md:font-medium"
+  >
+    CloudChef
+  </div>
+  <ContactUsButton
+    buttonCTA="Get in Touch"
+    formTitle="Request for a demo here"
+  />
 </nav>
