@@ -3,8 +3,15 @@ import DesktopVideo from "./DesktopVideo.tsx";
 import { ContactUsButton } from "./ContactUsButton.tsx";
 import { MobileVideoWithModal } from "./MobileVideoWithModal.tsx";
 
-const { preFace, title, description, benefits, buttonCTA, videoUrl } =
-  Astro.props;
+const {
+  preFace,
+  title,
+  descriptionLine1,
+  descriptionLine2,
+  benefits,
+  buttonCTA,
+  videoUrl,
+} = Astro.props;
 ---
 
 <div class="flex-col md:flex-row flex mx-5 md:mx-16 items-center">
@@ -21,7 +28,7 @@ const { preFace, title, description, benefits, buttonCTA, videoUrl } =
     <p
       class="mt-6 md:mt-4 font-normal text-p1-m md:text-p1-d font-inter text-deepBlack not-italic"
     >
-      {description}
+      {descriptionLine1}<br />{descriptionLine2}
     </p>
 
     <!-- Only for Desktop -->
@@ -56,7 +63,7 @@ const { preFace, title, description, benefits, buttonCTA, videoUrl } =
         client:visible
         buttonCTA={buttonCTA}
         formTitle="Request for a demo here"
-        className="flex-1"
+        className="flex-1 sm:text-p2-d"
       />
       <MobileVideoWithModal
         client:only="react"

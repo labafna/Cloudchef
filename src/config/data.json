@@ -2,7 +2,8 @@
   "brand": {
     "foodBrandInfo": {
       "title": "Scale to 100s of outlets, with perfect consistency",
-      "description": "Easy to integrate, intelligent, low-cost automation suite for your kitchen. No skilled staff required!",
+      "descriptionLine1": "Easy to integrate, intelligent, low-cost automation suite for your kitchen.",
+      "descriptionLine2": "No skilled staff required!",
       "preFace": "FOR FOOD BRANDS",
       "benefits": [
         "Tap into unrealized revenue",
@@ -53,7 +54,8 @@
   "platform": {
     "foodBrandInfo": {
       "title": "Serve Michelin-like dishes, with untrained staff",
-      "description": "End-to-end low cost automation suite for you to license and cook recipes from top food brands with super-human consistency",
+      "descriptionLine2": "",
+      "descriptionLine1": "End-to-end low cost automation suite for you to license and cook recipes from top food brands with super-human consistency",
       "preFace": "FOR FOOD PLATFORMS",
       "benefits": [
         "Increase demand",

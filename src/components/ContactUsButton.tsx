@@ -1,6 +1,5 @@
-import { useState } from "react";
-
 import { useVisibilityToggle } from "../hooks/useVisibilityToggle";
+import { useBodyScrollStop } from "../hooks/useBodyScrollStop";
 
 import type { ReactElement } from "react";
 
@@ -127,6 +126,7 @@ const ContactUsButton = ({
   className?: string;
 }): ReactElement => {
   const { isVisible, show, hide } = useVisibilityToggle(false);
+  useBodyScrollStop(isVisible);
 
   return (
     <>

@@ -1,4 +1,5 @@
 import { useVisibilityToggle } from "../hooks/useVisibilityToggle";
+import { useBodyScrollStop } from "../hooks/useBodyScrollStop";
 import type { ReactElement } from "react";
 
 const MobileVideoWithModal = ({
@@ -13,6 +14,7 @@ const MobileVideoWithModal = ({
     show: showOverlay,
     hide: hideOverlay,
   } = useVisibilityToggle(false);
+  useBodyScrollStop(isOverlayVisible);
 
   return (
     <>
