@@ -1,6 +1,6 @@
 ---
 import PageLayout from "../layouts/pageLayout.astro";
-import ModeToggle from "../components/ModeToggle.tsx";
+import ModeToggle from "../components/ModeToggle.astro";
 import FoodBrandInfo from "../components/BrandInfo.astro";
 import BrandsAndChefs from "../components/BrandsAndChefs.astro";
 import Testimonials from "../components/Testimonials.astro";
@@ -14,7 +14,7 @@ import data from "../config/data.json";
 
 <PageLayout>
   <div class="flex flex-col">
-    <ModeToggle selectedMode="brand" client:load />
+    <ModeToggle selectedMode="brand" />
     <span class="mt-12"></span>
     <FoodBrandInfo {...data.brand.foodBrandInfo} />
     <span class="mt-12 md:mt-24"></span>
