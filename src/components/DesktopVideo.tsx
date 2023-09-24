@@ -7,7 +7,7 @@ const DesktopVideo = ({ videoUrl }: { videoUrl: string }): ReactElement => {
   return (<>
   <button
     id="preview-button"
-    name="video preview button"
+    aria-label="video preview button"
     className="hidden md:block relative cursor-pointer"
     onClick={showOverlay}
   >
