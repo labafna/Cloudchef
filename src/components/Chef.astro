@@ -1,0 +1,29 @@
+<section
+  class="flex flex-col px-2 py-3 md:px-16 md:py-7 bg-deepBlack md:bg-greyYellowGreen"
+>
+  <h3
+    class="block md:hidden text-h3-m font-openSans font-bold text-center text-deepWhite"
+  >
+    Trusted by
+  </h3>
+  <div class="flex justify-between items-center mt-3 md:mt-0">
+    {
+      Array(5)
+        .fill(true)
+        .map((_, index) => (
+          <>
+            <img
+              alt="Chef Logo Image"
+              class="h-18 w-12 md:hidden"
+              src={`/images/chefLogs/logo_${index}_m.png`}
+            />
+            <img
+              alt="Chef Logo Image"
+              class="hidden md:block md:h-16 md:w-32"
+              src={`/images/chefLogs/logo_${index}.png`}
+            />
+          </>
+        ))
+    }
+  </div>
+</section>

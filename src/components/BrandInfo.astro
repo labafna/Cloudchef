@@ -2,15 +2,8 @@
 import DesktopVideo from "./DesktopVideo.tsx";
 import { ContactUsButton } from "./ContactUsButton.tsx";
 
-const {
-  preFace,
-  title,
-  description,
-  benefits,
-  mobileBenefits,
-  buttonCTA,
-  videoUrl,
-} = Astro.props;
+const { preFace, title, description, benefits, buttonCTA, videoUrl } =
+  Astro.props;
 ---
 
 <div class="flex-col md:flex-row flex mx-5 md:mx-16 items-center">
@@ -19,11 +12,13 @@ const {
       class="hidden md:block text-p1-d font-semibold not-italic text-sageGreen"
       >{preFace}</span
     >
-    <h1 class="text-h1-m md:text-h1-d font-grotesk text-deepBlack font-medium">
+    <h1
+      class="text-h1-m md:text-h1-d font-openSans md:font-grotesk text-deepBlack font-medium"
+    >
       {title}
     </h1>
     <p
-      class="mt-2 md:mt-4 font-normal text-p1-m md:text-p1-d font-inter text-deepBlack not-italic"
+      class="mt-6 md:mt-4 font-normal text-p1-m md:text-p1-d font-inter text-deepBlack not-italic"
     >
       {description}
     </p>
@@ -52,34 +47,23 @@ const {
       formTitle="Request for a demo here"
       className="mt-14 hidden md:block"
     />
-  </div>
-  <!-- --------------------- -->
+    <!-- --------------------- -->
 
-  <div
-    class="flex flex-col md:hidden bg-greyYellowGreen rounded-lg px-3 py-4 mt-6 mb-8"
-  >
-    <h3 class="text-h3-m font-grotesk font-medium text-deepBlack">
-      {mobileBenefits}
-    </h3>
-    <ContactUsButton
-      client:visible
-      buttonCTA={buttonCTA}
-      formTitle="Request for a demo here"
-      className="mt-2"
-    />
-  </div>
-
-  <div class="mt-11 md:mt-0 ml-0 md:ml-14 relative">
-    <!-- Required to avoid layout shifts when DesktopVideo component gets hydrated -->
-    <div class="hidden md:block" style={{ height: "512px", width: "368px" }}>
-      <DesktopVideo client:only="react" videoUrl={videoUrl} />
+    <!-- Only for Mobiles -->
+    <div class="flex md:hidden mt-11 gap-8">
+      <ContactUsButton
+        client:visible
+        buttonCTA={buttonCTA}
+        formTitle="Request for a demo here"
+      />
     </div>
-    <iframe
-      class="md:hidden h-52 w-full rounded-lg"
-      src={videoUrl}
-      title="YouTube video player"
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      allowfullscreen></iframe>
+    <!-- ------------------ -->
+  </div>
+  <!-- Required to avoid layout shifts when DesktopVideo component gets hydrated, only for desktops -->
+  <div
+    class="hidden md:block mt-0 ml-14"
+    style={{ height: "512px", width: "368px" }}
+  >
+    <DesktopVideo client:only="react" videoUrl={videoUrl} />
   </div>
 </div>

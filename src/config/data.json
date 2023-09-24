@@ -3,7 +3,6 @@
     "foodBrandInfo": {
       "title": "Scale to 100s of outlets, with perfect consistency",
       "description": "Easy to integrate, intelligent, low-cost automation suite for your kitchen. No skilled staff required!",
-      "mobileBenefits": "Easy to integrate, intelligent, low-cost automation suite for your kitchen. No skilled staff required!",
       "preFace": "FOR FOOD BRANDS",
       "benefits": [
         "Tap into unrealized revenue",
@@ -14,25 +13,22 @@
       "videoUrl": "https://www.youtube.com/embed/INDhZ7LwSeo?si=aOSeIEgeMmn3cQmo"
     },
     "features": {
-      "sectionTitle":"Superior to traditional scaling in every way",
+      "sectionTitle": "Superior to traditional scaling in every way",
       "properties": [
         {
           "title": "Food Consistency",
           "imageUrl": "/images/featureImages/consistency.png",
-          "description":
-            "Better consistency than trained chefs. Task-level audit in the kitchen"
+          "description": "Better consistency than trained chefs. Task-level audit in the kitchen"
         },
         {
           "title": "Revenue Growth",
           "imageUrl": "/images/featureImages/revenueGrowth.png",
-          "description":
-            "Tap into your franchise demand, scale faster while retaining brand equity"
+          "description": "Tap into your franchise demand, scale faster while retaining brand equity"
         },
         {
           "title": "Skill Independent",
           "imageUrl": "/images/featureImages/skillindepedent.png",
-          "description":
-            "No training to launch menus"
+          "description": "No training to launch menus"
         }
       ]
     },
@@ -55,7 +51,6 @@
     "foodBrandInfo": {
       "title": "Serve Michelin-like dishes, with untrained staff",
       "description": "End-to-end low cost automation suite for you to license and cook recipes from top food brands with super-human consistency",
-      "mobileBenefits": "Increase demand, customer retention, and profitability with simpler operations",
       "preFace": "FOR FOOD PLATFORMS",
       "benefits": [
         "Increase demand",
@@ -66,25 +61,22 @@
       "videoUrl": "https://www.youtube.com/embed/INDhZ7LwSeo?si=aOSeIEgeMmn3cQmo"
     },
     "features": {
-      "sectionTitle":"Superior to traditional licensing in every way",
+      "sectionTitle": "Superior to traditional licensing in every way",
       "properties": [
         {
           "title": "Licensing breadth",
           "imageUrl": "/images/featureImages/licensingbreadth.png",
-          "description":
-            "License and onboard recipes from any brand/chef in the world, not just local chefs"
+          "description": "License and onboard recipes from any brand/chef in the world, not just local chefs"
         },
         {
           "title": "Food Consistency",
           "imageUrl": "/images/featureImages/consistency.png",
-          "description":
-            "Better consistency than trained chefs. Task-level audit in the kitchen."
+          "description": "Better consistency than trained chefs. Task-level audit in the kitchen."
         },
         {
           "title": "Skill Independent",
           "imageUrl": "/images/featureImages/skillindepedent.png",
-          "description":
-            "No training to launch menus."
+          "description": "No training to launch menus."
         }
       ]
     },
