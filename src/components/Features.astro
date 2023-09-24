@@ -3,34 +3,35 @@ const { sectionTitle, properties } = Astro.props;
 ---
 
 <section class="flex flex-col py-4 px-5 md:py-18 md:px-18 w-full">
-    <h2 class="md:text-center text-h2-m md:text-h2-d font-grotesk font-medium">
-        {sectionTitle}
-    </h2>
-    <div class="flex flex-col md:flex-row w-full gap-4 mt-4 md:mt-6 flex-wrap">
-        {
-            properties.map(
-                (property: {
-                    imageUrl: string;
-                    title: string;
-                    description: string;
-                }) => (
-                    <div
-                        class="flex flex-col pt-8 pb-9 md:pt-12 md:pb-10 px-5 md:px-6 rounded-lg bg-dough text-deepBlack border border-solid border-greyYellowGreen"
-                        style="flex: 1 0 30%"
-                    >
-                        <img
-                            class="w-16 h-16 md:h-36 md:w-36 m-2 md:m-4"
-                            src={property.imageUrl}
-                        />
-                        <h2 class="text-h2-m md:text-h3-d font-medium font-grotesk mt-4">
-                            {property.title}
-                        </h2>
-                        <p class="text-p2-m md:text-p2-d font-semibold md:font-medium font-inter mt-2 md:mt-4">
-                            {property.description}
-                        </p>
-                    </div>
-                ),
-            )
-        }
-    </div>
+  <h2 class="md:text-center text-h2-m md:text-h2-d font-grotesk font-medium">
+    {sectionTitle}
+  </h2>
+  <div class="flex flex-col md:flex-row w-full gap-4 mt-4 md:mt-6 flex-wrap">
+    {
+      properties.map(
+        (property: {
+          imageUrl: string;
+          title: string;
+          description: string;
+        }) => (
+          <div
+            class="flex flex-col pt-8 pb-9 md:pt-12 md:pb-10 px-5 md:px-6 rounded-lg bg-dough text-deepBlack border border-solid border-greyYellowGreen"
+            style="flex: 1 0 30%"
+          >
+            <img
+              class="w-16 h-16 md:h-36 md:w-36 m-2 md:m-4"
+              src={property.imageUrl}
+              alt={`${property.title} visual rep`}
+            />
+            <h2 class="text-h2-m md:text-h3-d font-medium font-grotesk mt-4">
+              {property.title}
+            </h2>
+            <p class="text-p2-m md:text-p2-d font-semibold md:font-medium font-inter mt-2 md:mt-4">
+              {property.description}
+            </p>
+          </div>
+        )
+      )
+    }
+  </div>
 </section>

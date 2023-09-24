@@ -7,18 +7,20 @@ const DesktopVideo = ({ videoUrl }: { videoUrl: string }): ReactElement => {
   return (<>
   <button
     id="preview-button"
+    name="video preview button"
     className="hidden md:block relative cursor-pointer"
     onClick={showOverlay}
   >
     <img
       src="/images/video_thumbnail.png"
       className="rounded-xl"
+      alt="cloudchef video thumbnail"
       style={{height: "512px", width: "368px"}}
     />
     <div
       className="flex absolute inset-0 items-center justify-center"
     >
-      <img src="/images/play.png" />
+      <img src="/images/play.png" alt="play icon" />
     </div>
   </button>
   {isOverlayVisible ? <div
