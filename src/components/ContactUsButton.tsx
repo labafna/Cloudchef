@@ -1,16 +1,24 @@
-import { useState } from "react"
+import { useState } from "react";
 
-import { useVisibilityToggle } from '../hooks/useVisibilityToggle';
+import { useVisibilityToggle } from "../hooks/useVisibilityToggle";
 
-import type { ReactElement } from 'react';
+import type { ReactElement } from "react";
 
-
-function Form({ formTitle, closeForm }: { formTitle: string, closeForm: () => void }) {
+function Form({
+  formTitle,
+  closeForm,
+}: {
+  formTitle: string;
+  closeForm: () => void;
+}) {
   return (
-    <div className="rounded-lg p-4 bg-greyYellowGreen">
-      <div className="flex items-center gap-6">
-        <h1 className="text-h2-m font-grotesk font-medium">{formTitle}</h1>
-        <button className="hover:bg-buckwheaT rounded-full p-1" onClick={closeForm}>
+    <div className="w-80 rounded-lg p-4 bg-greyYellowGreen">
+      <div className="flex items-center justify-between">
+        <h1 className="text-p2-d font-inter font-bold">{formTitle}</h1>
+        <button
+          className="hover:bg-buckwheaT rounded-full p-1"
+          onClick={closeForm}
+        >
           <img src="/images/closeIcon.png" alt="Close button" />
         </button>
       </div>
@@ -26,7 +34,10 @@ function Form({ formTitle, closeForm }: { formTitle: string, closeForm: () => vo
         <input type="hidden" name="_subject" value="New form response"></input>
         <input type="hidden" name="_next" value="pages/index.astro"></input>
         <p className="w-full">
-          <label htmlFor="name" className="">Name*</label> <br />
+          <label htmlFor="name" className="text-p2-m font-inter font-medium">
+            Name*
+          </label>{" "}
+          <br />
           <input
             className="w-full inline-block rounded-4 mt-1 px-3 py-5 h-5 bg-deepWhite border border-solid border-dough"
             type="text"
@@ -36,7 +47,10 @@ function Form({ formTitle, closeForm }: { formTitle: string, closeForm: () => vo
           />
         </p>
         <p className="w-full">
-          <label htmlFor="email">Email*</label> <br />
+          <label htmlFor="email" className="text-p2-m font-inter font-medium">
+            Email*
+          </label>{" "}
+          <br />
           <input
             type="email"
             name="email"
@@ -46,7 +60,13 @@ function Form({ formTitle, closeForm }: { formTitle: string, closeForm: () => vo
           />
         </p>
         <p className="w-full">
-          <label htmlFor="phoneNumber">Phone number*</label> <br />
+          <label
+            htmlFor="phoneNumber"
+            className="text-p2-m font-inter font-medium"
+          >
+            Phone number*
+          </label>{" "}
+          <br />
           <input
             type="tel"
             name="phoneNumber"
@@ -56,13 +76,37 @@ function Form({ formTitle, closeForm }: { formTitle: string, closeForm: () => vo
           />
         </p>
         <p className="w-full">
-          <label htmlFor="companyName">Company name/website link</label> <br />
+          <label
+            htmlFor="brandName"
+            className="text-p2-m font-inter font-medium"
+          >
+            Brand/Platform Name*
+          </label>{" "}
+          <br />
           <input
             type="text"
             className="w-full inline-block rounded-4 mt-1 px-3 py-5 h-5 bg-deepWhite border border-solid border-dough"
             placeholder="Type here"
-            name="companyName"
+            name="brandName"
             required
+          ></input>
+        </p>
+        <p className="w-full">
+          <label htmlFor="message" className="text-p2-m font-inter font-medium">
+            Message{" "}
+            <span
+              className="text-p0-m font-medium font-inter"
+              style={{ color: "#636363" }}
+            >
+              (optional)
+            </span>
+          </label>{" "}
+          <br />
+          <input
+            type="text"
+            className="w-full inline-block rounded-4 mt-1 px-3 py-5 h-5 bg-deepWhite border border-solid border-dough"
+            placeholder="Type here"
+            name="message"
           ></input>
         </p>
         <button className="w-full text-center rounded-xl bg-deepBlack text-deepWhite px-6 py-3 text-p2-d font-semibold font-inter">
@@ -70,10 +114,18 @@ function Form({ formTitle, closeForm }: { formTitle: string, closeForm: () => vo
         </button>
       </form>
     </div>
-  )
+  );
 }
 
-const ContactUsButton = ({ buttonCTA, formTitle, className }: {buttonCTA:string; formTitle: string; className?: string }): ReactElement => {
+const ContactUsButton = ({
+  buttonCTA,
+  formTitle,
+  className,
+}: {
+  buttonCTA: string;
+  formTitle: string;
+  className?: string;
+}): ReactElement => {
   const { isVisible, show, hide } = useVisibilityToggle(false);
 
   return (
@@ -84,11 +136,13 @@ const ContactUsButton = ({ buttonCTA, formTitle, className }: {buttonCTA:string;
       >
         {buttonCTA}
       </button>
-      {isVisible ? <div className="flex fixed inset-0 w-full h-full justify-center items-center bg-deepBlack bg-opacity-75 z-20">
-        <Form formTitle={formTitle} closeForm={hide}/>
-      </div> : null}
+      {isVisible ? (
+        <div className="flex fixed inset-0 w-full h-full justify-center items-center bg-deepBlack bg-opacity-75 z-20">
+          <Form formTitle={formTitle} closeForm={hide} />
+        </div>
+      ) : null}
     </>
-  )
+  );
 };
 
 export { ContactUsButton };
