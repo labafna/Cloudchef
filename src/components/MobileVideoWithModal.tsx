@@ -34,7 +34,7 @@ const MobileVideoWithModal = ({
             className="absolute top-4 right-6 hover:rounded-full hover:bg-deepBlack px-2"
             onClick={hideOverlay}
           >
-            <span class="text-p2-m font-grotesk text-deepWhite ">X</span>
+            <span className="text-p2-m font-grotesk text-deepWhite ">X</span>
           </button>
           <iframe
             id="youtube-video-iframe"
